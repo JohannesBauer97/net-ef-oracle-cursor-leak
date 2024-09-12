@@ -59,3 +59,4 @@ SYSTEM    357
 ```
 
 As soon as the WebApplication1 project is stopped, the number of open cursors for each user goes back to the initial state.
+When keeping the app running and running the python script again, the number of open cursors **do not** increase anymore. This is wanted behavior, as the cursors are being closed properly or reused. -> No cursor leak.
